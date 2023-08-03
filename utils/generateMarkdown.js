@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function to render license badge based on user selection
 function renderLicenseBadge(answers) {
   const licenseBadge = {
     'MIT': 'https://img.shields.io/badge/license-MIT',
@@ -10,9 +9,7 @@ function renderLicenseBadge(answers) {
   const pickedLicense = answers;
   return licenseBadge[pickedLicense] || '';
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function to render license link based on user selection
 function renderLicenseLink(answers) {
   const licenseLink = {
     'MIT': 'https://opensource.org/licenses/MIT',
@@ -22,19 +19,13 @@ function renderLicenseLink(answers) {
   const selectedLicense = answers;
   return licenseLink[selectedLicense] || '';
 }
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  
-  }
-// TODO: Create a function to generate markdown for README
+// Generate markdown file function
 function generateMarkdown(answers) {
   let licenseBadge = renderLicenseBadge(answers.license);
   let licenseLink = renderLicenseLink(answers.license);
-  // console.log(licenseBadge)
+// Template string to generate README.md file based on users answers
   return `# ${answers.title}
-  ![Static Badge](https://img.shields.io/badge/license-${answers.license}-green.svg)
+  ![Static Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg)
 
 ## Table of Contents
   
@@ -68,14 +59,14 @@ ${answers.tests}
 
 ## License
 
-This project is licensed under ${licenseLink}
+![Static Badge](https://img.shields.io/badge/license-${answers.license}-blue.svg) This project is licensed under ${licenseLink} 
 
 
 ## Questions
-Feel free to contact me with any questions about this project directly via GitHub: 
-(https://github.com/${answers.github}) or just send me an email at ${answers.email} 
+Feel free to contact me with any questions about this project directly via GitHub
+(https://github.com/${answers.github}) or send me an email at ${answers.email} 
 
 `
 }
-
+// Exports generateMarkdown file to index.js to write README.md file
 module.exports = generateMarkdown;
