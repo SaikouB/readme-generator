@@ -39,7 +39,7 @@ function generateMarkdown(answers) {
 
 
 ## Description
-${answers.Description}
+${answers.description}
 
 ## Installation
 

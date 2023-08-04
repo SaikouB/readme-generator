@@ -1,4 +1,4 @@
-# Project Title
+# Readme-generator
   ![Static Badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Table of Contents
@@ -13,23 +13,23 @@
 
 
 ## Description
-undefined
+Describe readme generator
 
 ## Installation
 
-installing project
+Install readme-generator
 
 ## Usage
 
-instruction on how to use project
+How to use readme-generator
 
 ## Contributing
 
-people who contributed to project
+Contributors to readme-generator
 
 ## Testing
 
-testing your project
+Testing readme-generator
 
 ## License
 

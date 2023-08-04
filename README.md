@@ -25,6 +25,8 @@ To install this application, the user will need to have vs code installed to the
 
 To use this application the user will need to fork this repository's code to their local computer and run the commands demonstrated in the video below to properly generated a high-quality read me file.
 
+https://drive.google.com/file/d/1ekPz6342wdut6EI-1kF-KrID7O4wtfiu/view
+
 ## Contributing
 
 - https://github.com/SaikouB
