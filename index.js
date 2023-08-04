@@ -107,7 +107,7 @@ const writeMdFile = (readMe, answers) => {
 }
 // Function to initialize app
 function init() {
-	let readMe = 'README.md';
+	let readMe = './output/README.md';
 	inquirer.prompt(questions).then(function (answers) {
 		writeMdFile(readMe, answers)
 	});

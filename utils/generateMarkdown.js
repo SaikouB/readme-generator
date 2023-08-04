@@ -39,7 +39,7 @@ function generateMarkdown(answers) {
 
 
 ## Description
-${answers.installation}
+${answers.Description}
 
 ## Installation
 
@@ -63,10 +63,9 @@ ${answers.tests}
 
 
 ## Questions
-Feel free to contact me with any questions about this project directly via GitHub
-(https://github.com/${answers.github}) or send me an email at ${answers.email} 
-
+Feel free to check out more of my work on GitHub (https://github.com/${answers.github}),
+or to contact me with any questions about this project, send me an email at ${answers.email}
 `
 }
-// Exports generateMarkdown file to index.js to write README.md file
+// Exports generateMarkdown file in index.js to write README.md file
 module.exports = generateMarkdown;
